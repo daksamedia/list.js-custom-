@@ -39,6 +39,8 @@ var List = function(id, options, values) {
       self.handlers       = { 'updated': [] };
       self.plugins        = {};
       self.valueNames     = [];
+      self.lastI = 1;
+      self.lastPage = 10000;
       self.utils          = {
         getByClass: getByClass,
         extend: extend,
