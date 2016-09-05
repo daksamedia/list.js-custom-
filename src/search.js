@@ -79,6 +79,8 @@ module.exports = function(list) {
     prepare.setColumns();
 
     if (searchString === "" ) {
+      list.i = list.lastI;
+      list.page = list.lastPage;
       search.reset();
     } else {
       list.searched = true;
